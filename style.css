@@ -58,7 +58,7 @@
     margin-top: 15px;
     padding: 30px;
 
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
     column-gap: 25px;
   }
 
@@ -83,7 +83,7 @@
     border-radius: 40px;
     font-size: 16px;
     width: 160px;
-    margin-top: 30px;
+    margin: 30px 0;
     cursor: pointer;
   }
   .content button:hover{
@@ -100,4 +100,10 @@ footer{
     padding: 10px;
     border-top: 2px solid tomato;
     text-align: center;
+}
+
+@media (max-width: 720px) {
+    .navigation{
+        display: none;
+    }
 }
