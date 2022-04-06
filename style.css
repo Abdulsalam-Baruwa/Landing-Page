@@ -58,7 +58,7 @@
     margin-top: 15px;
     padding: 30px;
 
-    grid-template-columns: repeat(auto-fill, minmax(1fr));
+    
     column-gap: 25px;
   }
 
@@ -102,8 +102,17 @@ footer{
     text-align: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
+    .main{
+        grid-template-columns: repeat(auto-fill, minmax(1fr));
+    }
     .navigation{
         display: none;
+    }
+}
+
+@media(min-width: 769px){
+    .main{
+        grid-template-columns: 40% 1fr;
     }
 }
